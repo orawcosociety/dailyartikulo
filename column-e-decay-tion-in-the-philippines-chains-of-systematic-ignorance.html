@@ -1,0 +1,169 @@
+<meta name='viewport' content='width=device-width, initial-scale=1'/><!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ORAWCO Society: The Daily Artikulo</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      height: 200vh;
+    }
+    .cover {
+      width: 100%;
+      aspect-ratio: 16 / 5;
+      background-color: #0077FF;
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    #cabinetButton {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      padding: 10px 15px;
+      background: #0077FF;
+      color: white;
+      border: none;
+      cursor: pointer;
+      z-index: 1001;
+    }
+    .cover img {
+      max-height: 80%;
+      max-width: 80%;
+      object-fit: contain;
+    }
+    #cabinet {
+      position: fixed;
+      top: 0;
+      left: -60%;
+      width: 45%;
+      max-width: 300px;
+      height: 100vh;
+      background: #004390;
+      color: white;
+      padding: 20px;
+      box-shadow: 2px 0 10px rgba(0, 0, 0, 0.5);
+      transition: left 0.3s ease;
+      z-index: 1000;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    #cabinet.open {
+      left: 0;
+    }
+    body.lock-scroll {
+      overflow: hidden;
+    }
+    #cabinet a {
+      display: block;
+      margin: 10px 0;
+      text-decoration: none;
+      color: white;
+      font-size: 18px;
+    }
+    #cabinet p {
+      margin: 15px 0;
+      cursor: pointer;
+    }
+    #cabinet p:hover {
+      text-decoration: underline;
+    }
+    #closeCabinet {
+      padding: 10px 15px;
+      background: #004390;
+      color: white;
+      border: none;
+      cursor: pointer;
+      margin-top: auto;
+      width: 100%;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <div class="cover">
+    <button id="cabinetButton" style="width: 15%; height: -25%; font-size: 30px;">☰</button>
+    <img src="orawco2023org.png" alt="Cover Image" style="width: 65%; height: auto;">
+  </div>
+<div id="cabinet">
+  <div>
+    <button id="closeCabinet" style="font-size: 50px; text-align: left;"><strong>×</strong></button>
+    <img src="orawco-club-svsfhs.png" alt="Cover Photo Cabinet" style="width: 75%; height: auto; margin-bottom: -70px;">
+	<a>&nbsp;</a>
+	<a>&nbsp;</a>
+    <a href="index.html" style="top-margin: 30px;">Home</a>
+    <a href="category-section.html">Categories</a>
+    <a href="news-section.html">News</a>
+    <a href="news-section.html#sports">Sports</a>
+    <a href="juanmazing-section.html#agham">Agham</a>
+    <a href="juanmazing-section.html#historya">Historya</a>
+    <a href="about_us.html">About Us</a>
+    <a href="feedback.html">Feedback</a>
+    </div>
+</div>
+  <script>
+    const cabinetButton = document.getElementById("cabinetButton");
+    const cabinet = document.getElementById("cabinet");
+    const closeCabinet = document.getElementById("closeCabinet");
+    const body = document.body;
+    cabinetButton.addEventListener("click", () => {
+      cabinet.classList.add("open");
+      body.classList.add("lock-scroll");
+      cabinetButton.style.display = "none";
+    });
+    closeCabinet.addEventListener("click", () => {
+      cabinet.classList.remove("open");
+      body.classList.remove("lock-scroll");
+      cabinetButton.style.display = "block";
+    });
+    document.querySelectorAll(".cabinet-option").forEach(option => {
+      option.addEventListener("click", () => {
+        cabinet.classList.remove("open");
+        body.classList.remove("lock-scroll");
+        cabinetButton.style.display = "block";
+      });
+    });
+  </script>
+</html>
+<head>
+  <style>
+    .center-image {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 35%;
+    }
+  </style>
+</head>
+<body><hr>
+  <img src="column-e-decay-tion-in-the-philippines-chains-of-systematic-ignorance.png" 
+     style="width: 350px !important; height: auto !important; display: block; margin-top: 45px;" 
+     alt="High Quality Image"
+     class="center-image">
+<hr>
+      <p class="category" style="font-family: Arial; font-size: 22px; margin-up: 0px;"><strong>COLUMN</strong></p>
+<main class="article-container">
+    <article>
+      <h1 class="headline" style="font-family: Arial; font-size: 28px; margin-up: 0px;">E-decay-tion in the Philippines: Chains of Systematic Ignorance</h1>
+      <p class="byline" style="font-family: Calibri; font-size: 12px;">Published on August 21, 2025 | By <span class="author">Juan Emmanuel C. Castro</span></p>
+</body>
+</html> 
+      <p class="quote" style="font-family: Arial; font-size: 15px; text-align: justify;">‎A system chained by backward philosophies produces students full of mediocrity.
+      <p class="lead" style="font-family: Arial; font-size: 15px; text-align: justify;">‎The war against rising illiteracy has always been fought politically. The Philippines, according to a recent PISA study in 2024, shows that 10% of Filipino students aged 5 years and over have only basic literacy, which means they can read, write, and understand. However, 29.2% are considered functionally illiterate under stricter definitions that include reading, writing, computing, and comprehension skills. This means around 18.9 million Filipinos aged 10 to 64 are functionally illiterate--they can read, write, and compute but struggle with comprehension and applying information effectively in daily life. Other studies conducted by different research organizations indicate a higher percentage of illiteracy, nearly 97% to 99%, measured by how they read and write simple text. This data, according to some experts, is alarming, for it shows the decaying and unsuccessful programs of the country's Department of Education, despite the persistent budget expenditures over the last few years. It seems that education finds itself being led by incompetent and corrupt leaders.
+      <p class="body" style="font-family: Arial; font-size: 15px; text-align: justify;">‎As recently as last year, talks and hearings within the Senate and Congress questioned the then Secretary of DepEd, Vice President Sara Duterte, over her use of confidential funds in an agency that requires books, not bullets--and how a simple children's book cost such an enormous amount of money. According to the Senate investigation, between 2022 and 2024, the Department of Education (DepEd) failed to utilize ₱36.13 billion allocated to its computerization program. For instance, in 2024, only ₱2.1 billion out of ₱18 billion (about 12%) allotted for computerization had been obligated by mid-year, with similar low utilization patterns in previous years. This means as much as 89% of the budget for key technology programs remains unspent, contributing to inefficiency and lost opportunities for students and teachers.
+      <p class="body1" style="font-family: Arial; font-size: 15px; text-align: justify;">‎This problem costs us a generation. Yearly, each term of this neoliberal pattern continues--corruption, neglect, and decay. Year after year, the education system is weaponized--not to liberate minds, but to produce obedient laborers, resigned citizens, and confused voters. Education is always being neglected, despite the billions of taxes supposedly "used" but actually misused and sometimes vanishing into thin air without proper accountability.
+      <p class="body2" style="font-family: Arial; font-size: 15px; text-align: justify;">‎The problem of education in the Philippines is a reflection of the government system--disillusioned by broken promises and lack of accountability. The patronage system--the existing clientelism of the feudo-capitalist order--has made the education system poor and weaker. Yet only a few question this system, despite widespread corruption in the Department of Education. I often wonder: how come school institutions in this country use the symbol of a torch when the system itself is shadowed by an oppressive feudal-capitalist structure, swallowed by corruption and deceit?
+      <p class="lead" style="font-family: Arial; font-size: 15px; text-align: justify;">‎I believe the issue of illiteracy in the Philippines is a deep problem and cannot be solved by just seizing classrooms and handing out textbooks. It can only be addressed through a revolution--a radical change that holds politicians and leaders accountable. "Ignorance is strength," shouts the fictional authoritarian government in 1984. Ignorance has always been a political weapon. And in a system such as the Philippines, decades have shown that the government functionally teaches ignorance as the binding glue of unity.
+      <p class="lead" style="font-family: Arial; font-size: 15px; text-align: justify;">‎As Rosa Luxemburg says, "The bourgeoisie... want to keep the working class in the most profound ignorance, to render them incapable of judgment, to brutalize them. For that purpose, they have schools, the Church, and the press."
+      <p class="lead" style="font-family: Arial; font-size: 15px; text-align: justify;">‎The elite and the bourgeoisie in this country continue to grapple education into their hands--with the help of the feudo-capitalist system in the Philippines. Elites have monopolized quality education, turning it into a mere commodity, and for the poor, quality education is a luxury. For the feudalist, it is a tool to keep the poor in place.
+      <p class="lead" style="font-family: Arial; font-size: 15px; text-align: justify;">‎When a social system weaponizes and normalizes ignorance and mediocrity, freedom dies. We must stop treating education as a ritual of compliance. We must reclaim it--not just as a right, but as a weapon of liberation.
+<hr style="margin-top: 18px;">
+<div style="display: flex; align-items: center; font-size: 8px">
+  <img src="https://drive.google.com/thumbnail?id=1g2PwfeKk_iPDUMw3YGS2Mc1r1g5CElrm&sz=w5000" 
+       style="width: 145px; height: auto; display: block; margin-right: 8px;" 
+       alt="svsf-sslg-orawco-artikulo-logo">
+  <p style="margin: 5; font-family: Calibri; font-size: 8px; text-align: left;">| ©2025 Daily Artikulo of the ORAWCO Club (SVSFHS). All rights reserved.</p>

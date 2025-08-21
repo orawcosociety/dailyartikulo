@@ -1,0 +1,172 @@
+<meta name='viewport' content='width=device-width, initial-scale=1'/><!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ORAWCO Society: The Daily Artikulo</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      height: 200vh;
+    }
+    .cover {
+      width: 100%;
+      aspect-ratio: 16 / 5;
+      background-color: #0077FF;
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    #cabinetButton {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      padding: 10px 15px;
+      background: #0077FF;
+      color: white;
+      border: none;
+      cursor: pointer;
+      z-index: 1001;
+    }
+    .cover img {
+      max-height: 80%;
+      max-width: 80%;
+      object-fit: contain;
+    }
+    #cabinet {
+      position: fixed;
+      top: 0;
+      left: -60%;
+      width: 45%;
+      max-width: 300px;
+      height: 100vh;
+      background: #004390;
+      color: white;
+      padding: 20px;
+      box-shadow: 2px 0 10px rgba(0, 0, 0, 0.5);
+      transition: left 0.3s ease;
+      z-index: 1000;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    #cabinet.open {
+      left: 0;
+    }
+    body.lock-scroll {
+      overflow: hidden;
+    }
+    #cabinet a {
+      display: block;
+      margin: 10px 0;
+      text-decoration: none;
+      color: white;
+      font-size: 18px;
+    }
+    #cabinet p {
+      margin: 15px 0;
+      cursor: pointer;
+    }
+    #cabinet p:hover {
+      text-decoration: underline;
+    }
+    #closeCabinet {
+      padding: 10px 15px;
+      background: #004390;
+      color: white;
+      border: none;
+      cursor: pointer;
+      margin-top: auto;
+      width: 100%;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <div class="cover">
+    <button id="cabinetButton" style="width: 15%; height: -25%; font-size: 30px;">☰</button>
+    <img src="orawco2023org.png" alt="Cover Image" style="width: 65%; height: auto;">
+  </div>
+<div id="cabinet">
+  <div>
+    <button id="closeCabinet" style="font-size: 50px; text-align: left;"><strong>×</strong></button>
+    <img src="orawco-club-svsfhs.png" alt="Cover Photo Cabinet" style="width: 75%; height: auto; margin-bottom: -70px;">
+	<a>&nbsp;</a>
+	<a>&nbsp;</a>
+    <a href="index.html" style="top-margin: 30px;">Home</a>
+    <a href="category-section.html">Categories</a>
+    <a href="news-section.html">News</a>
+    <a href="news-section.html#sports">Sports</a>
+    <a href="juanmazing-section.html#agham">Agham</a>
+    <a href="juanmazing-section.html#historya">Historya</a>
+    <a href="about_us.html">About Us</a>
+    <a href="feedback.html">Feedback</a>
+    </div>
+</div>
+  <script>
+    const cabinetButton = document.getElementById("cabinetButton");
+    const cabinet = document.getElementById("cabinet");
+    const closeCabinet = document.getElementById("closeCabinet");
+    const body = document.body;
+    cabinetButton.addEventListener("click", () => {
+      cabinet.classList.add("open");
+      body.classList.add("lock-scroll");
+      cabinetButton.style.display = "none";
+    });
+    closeCabinet.addEventListener("click", () => {
+      cabinet.classList.remove("open");
+      body.classList.remove("lock-scroll");
+      cabinetButton.style.display = "block";
+    });
+    document.querySelectorAll(".cabinet-option").forEach(option => {
+      option.addEventListener("click", () => {
+        cabinet.classList.remove("open");
+        body.classList.remove("lock-scroll");
+        cabinetButton.style.display = "block";
+      });
+    });
+  </script>
+</html>
+<head>
+  <style>
+    .center-image {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 35%;
+    }
+  </style>
+</head>
+<body><hr>
+  <img src="juanmazing-manuel-l-quezon-the-lion-of-baler-and-the-voice-of-the-filipino-dream.png" 
+     style="width: 350px !important; height: auto !important; display: block; margin-top: 45px;" 
+     alt="High Quality Image"
+     class="center-image">
+<hr>
+      <p class="category" style="font-family: Arial; font-size: 22px; margin-up: 0px;"><strong>#JUANMAZING</strong></p>
+<main class="article-container">
+    <article>
+      <h1 class="headline" style="font-family: Arial; font-size: 28px; margin-up: 0px;">Manuel L. Quezon: The Lion of Baler and the Voice of the Filipino Dream</h1>
+      <p class="byline" style="font-family: Calibri; font-size: 12px;">Published on August 20, 2025 | By <span class="author">Jedidiah Joy D. Balingit</span></p>
+</body>
+</html> 
+      <p class="lead" style="font-family: Arial; font-size: 15px; text-align: justify;">"I prefer a government run like hell by Filipinos to one run like heaven by Americans." – Manuel L. Quezon
+      <p class="lead" style="font-family: Arial; font-size: 15px; text-align: justify;">At a time when the Philippines stood at the crossroads between colonization and independence, one voice rose above the rest--bold, brilliant, and unmistakably Filipino. Manuel L. Quezon, born in the coastal town of Baler, would rise from modest beginnings to become a revolutionary fighter, a political tactician, and ultimately, the first President of the Philippine Commonwealth. More than a leader, Quezon was a man with a mission: to give his people a nation they could truly call their own.
+      <p class="lead" style="font-family: Arial; font-size: 15px; text-align: justify;">Manuel Luis Quezon y Molina was born on August 19, 1878, to Lucio Quezon, a retired Spanish colonial soldier turned teacher, and María Dolores Molina. Raised in a Spanish-speaking household, Quezon would later become a fierce advocate of the Filipino language--proof that identity, for him, was never static but built with purpose.
+      <p class="lead" style="font-family: Arial; font-size: 15px; text-align: justify;">In 1899, while studying law at the University of Santo Tomás, Quezon dropped out to join the revolutionary army under Emilio Aguinaldo during the Philippine-American War. He served as a guerrilla officer, but after the Filipino surrender in 1901, he returned to his legal studies and graduated in 1903. His law career was brief--politics was calling.
+      <p class="lead" style="font-family: Arial; font-size: 15px; text-align: justify;">Quezon entered public service as governor of Tayabas in 1905, and by 1907, he was elected to the first Philippine Assembly. A gifted orator with a natural sense of leadership, he quickly rose through the political ranks. As Resident Commissioner to the U.S. Congress from 1909 to 1916, Quezon worked tirelessly in Washington, D.C., lobbying for Philippine autonomy. His political savvy helped push through the Jones Act of 1916, which promised eventual independence.
+      <p class="lead" style="font-family: Arial; font-size: 15px; text-align: justify;">But it was the Tydings-McDuffie Act of 1934 that marked Quezon's greatest political achievement. He led the first Independence Mission to the United States, and the Act that resulted from it paved the way for the Philippine Commonwealth--a 10-year transitional government before full independence. In 1935, Quezon was elected as the first President of the Commonwealth of the Philippines.
+      <p class="lead" style="font-family: Arial; font-size: 15px; text-align: justify;">As president, Quezon wasted no time in launching reforms. He tackled agrarian unrest by promoting land redistribution and opening Mindanao for resettlement. He also restructured the Philippine military, addressed government corruption, improved public education, and began the development of Quezon City--his envisioned future capital that symbolized national progress. He was also instrumental in the establishment of the National Language, pushing for a unified Filipino identity.
+      <p class="lead" style="font-family: Arial; font-size: 15px; text-align: justify;">Despite his patrician appearance and eloquence, Quezon was a populist at heart. He connected deeply with the common Filipino and spoke passionately about social justice. He was also one of the few world leaders who offered refuge to Jewish refugees during the Holocaust, authorizing their safe settlement in the Philippines at a time when few other nations would.
+      <p class="lead" style="font-family: Arial; font-size: 15px; text-align: justify;">But Quezon's presidency faced a major crisis with the outbreak of World War II. When Japanese forces invaded the Philippines in 1941, Quezon and his government were forced into exile. In the United States, he continued leading the Filipino cause, rallying support from President Franklin D. Roosevelt and other American leaders. Though his health was failing due to tuberculosis, Quezon remained the defiant face of Filipino resistance.
+      <p class="lead" style="font-family: Arial; font-size: 15px; text-align: justify;">He died on August 1, 1944, in Saranac Lake, New York--just months before Allied forces began liberating the Philippines and two years before its official independence in 1946. His remains were returned to the Philippines and now rest at the Quezon Memorial Circle, a towering tribute to his undying patriotism.
+      <p class="lead" style="font-family: Arial; font-size: 15px; text-align: justify;">Quezon's legacy lives on not just in monuments and holidays like Quezon Day (August 19), but in the very structure of the Philippine nation. He is remembered as the "Father of the Philippine Nation," not merely for being the first president of the Commonwealth, but for envisioning--and laying the foundation for--a free, modern, and unified Philippines.
+      <p class="lead" style="font-family: Arial; font-size: 15px; text-align: justify;">His presidential papers, now part of UNESCO's Memory of the World Register, reflect a life devoted to the cause of nationhood. His name lives on in Quezon City, in schools and institutions, and in the hearts of Filipinos who still look to his legacy for inspiration.
+<hr style="margin-top: 18px;">
+<div style="display: flex; align-items: center; font-size: 8px">
+  <img src="https://drive.google.com/thumbnail?id=1g2PwfeKk_iPDUMw3YGS2Mc1r1g5CElrm&sz=w5000" 
+       style="width: 145px; height: auto; display: block; margin-right: 8px;" 
+       alt="svsf-sslg-orawco-artikulo-logo">
+  <p style="margin: 5; font-family: Calibri; font-size: 8px; text-align: left;">| ©2025 Daily Artikulo of the ORAWCO Club (SVSFHS). All rights reserved.</p>
