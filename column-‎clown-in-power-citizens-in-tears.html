@@ -1,0 +1,176 @@
+<meta name='viewport' content='width=device-width, initial-scale=1'/><!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ORAWCO Society: The Daily Artikulo</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      height: 200vh;
+    }
+    .cover {
+      width: 100%;
+      aspect-ratio: 16 / 5;
+      background-color: #0077FF;
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    #cabinetButton {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      padding: 10px 15px;
+      background: #0077FF;
+      color: white;
+      border: none;
+      cursor: pointer;
+      z-index: 1001;
+    }
+    .cover img {
+      max-height: 80%;
+      max-width: 80%;
+      object-fit: contain;
+    }
+    #cabinet {
+      position: fixed;
+      top: 0;
+      left: -60%;
+      width: 45%;
+      max-width: 300px;
+      height: 100vh;
+      background: #004390;
+      color: white;
+      padding: 20px;
+      box-shadow: 2px 0 10px rgba(0, 0, 0, 0.5);
+      transition: left 0.3s ease;
+      z-index: 1000;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    #cabinet.open {
+      left: 0;
+    }
+    body.lock-scroll {
+      overflow: hidden;
+    }
+    #cabinet a {
+      display: block;
+      margin: 10px 0;
+      text-decoration: none;
+      color: white;
+      font-size: 18px;
+    }
+    #cabinet p {
+      margin: 15px 0;
+      cursor: pointer;
+    }
+    #cabinet p:hover {
+      text-decoration: underline;
+    }
+    #closeCabinet {
+      padding: 10px 15px;
+      background: #004390;
+      color: white;
+      border: none;
+      cursor: pointer;
+      margin-top: auto;
+      width: 100%;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <div class="cover">
+    <button id="cabinetButton" style="width: 15%; height: -25%; font-size: 30px;">☰</button>
+    <img src="orawco2023org.png" alt="Cover Image" style="width: 65%; height: auto;">
+  </div>
+<div id="cabinet">
+  <div>
+    <button id="closeCabinet" style="font-size: 50px; text-align: left;"><strong>×</strong></button>
+    <img src="orawco-club-svsfhs.png" alt="Cover Photo Cabinet" style="width: 75%; height: auto; margin-bottom: -70px;">
+	<a>&nbsp;</a>
+	<a>&nbsp;</a>
+    <a href="index.html" style="top-margin: 30px;">Home</a>
+    <a href="category-section.html">Categories</a>
+    <a href="news-section.html">News</a>
+    <a href="news-section.html#sports">Sports</a>
+    <a href="juanmazing-section.html#agham">Agham</a>
+    <a href="juanmazing-section.html#historya">Historya</a>
+    <a href="about_us.html">About Us</a>
+    <a href="feedback.html">Feedback</a>
+    </div>
+</div>
+  <script>
+    const cabinetButton = document.getElementById("cabinetButton");
+    const cabinet = document.getElementById("cabinet");
+    const closeCabinet = document.getElementById("closeCabinet");
+    const body = document.body;
+    cabinetButton.addEventListener("click", () => {
+      cabinet.classList.add("open");
+      body.classList.add("lock-scroll");
+      cabinetButton.style.display = "none";
+    });
+    closeCabinet.addEventListener("click", () => {
+      cabinet.classList.remove("open");
+      body.classList.remove("lock-scroll");
+      cabinetButton.style.display = "block";
+    });
+    document.querySelectorAll(".cabinet-option").forEach(option => {
+      option.addEventListener("click", () => {
+        cabinet.classList.remove("open");
+        body.classList.remove("lock-scroll");
+        cabinetButton.style.display = "block";
+      });
+    });
+  </script>
+</html>
+<head>
+  <style>
+    .center-image {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 35%;
+    }
+  </style>
+</head>
+<body><hr>
+  <img src="column-05.png" 
+     style="width: 350px !important; height: auto !important; display: block; margin-top: 45px;" 
+     alt="High Quality Image"
+     class="center-image">
+<hr>
+      <p class="category" style="font-family: Arial; font-size: 22px; margin-up: 0px;"><strong>COLUMN</strong></p>
+<main class="article-container">
+    <article>
+      <h1 class="headline" style="font-family: Arial; font-size: 28px; margin-up: 0px;">Clowns in Power, Citizen in Tears</h1>
+      <p class="byline" style="font-family: Calibri; font-size: 12px;">Published on August 23, 2025 | By <span class="author">Lemuel James B. Danga</span></p>
+</body>
+</html> 
+      <p class="lead" style="font-family: Arial; font-size: 15px; text-align: justify;">‎In the Philippines, politics often feels like a circus. Instead of focusing on real issues, many leaders seem more interested in showmanship, power plays, and endless drama.
+      <p class="lead" style="font-family: Arial; font-size: 15px; text-align: justify;">‎For 2025, President Ferdinand Marcos Jr. signed a ₱6.33 trillion budget--the biggest in history. But instead of putting more money into health and education, funds were cut. PhilHealth lost its budget, and DepEd lost ₱10 billion for computers in schools. At the same time, projects linked to politicians got bigger budgets. People questioned the fairness, and even lawmakers argued over "errors" that looked more like cover-ups.
+      <p class="lead" style="font-family: Arial; font-size: 15px; text-align: justify;">‎Another big problem is disinformation. AI-made videos and posts are being used to twist stories, especially about the Duterte drug war. These confuse the public and make it harder to know the truth. Surveys show many Filipinos see fake news as one of the country's biggest problems today.
+      <p class="lead" style="font-family: Arial; font-size: 15px; text-align: justify;">‎Dynasties continue to dominate. Vice President Sara Duterte avoided impeachment after the Supreme Court blocked the case. Former president Rodrigo Duterte won back the mayoral seat in Davao. For many, it looks like the same families just trade places in power.
+      <p class="lead" style="font-family: Arial; font-size: 15px; text-align: justify;">‎Scandals like the ₱41 billion Pharmally deal during COVID-19 still haunt the government. Even with officials dismissed, accountability is rare. New programs like AKAP also raised suspicion, with critics saying they were more about gaining votes than real help. No wonder surveys show corruption as the number one concern of Filipinos.
+      <p class="lead" style="font-family: Arial; font-size: 15px; text-align: justify;">‎On top of this, activists and critics are still being tagged as "terrorists" or charged with crimes they didn't commit. Instead of listening to people, the government often tries to silence them.
+      <p class="lead" style="font-family: Arial; font-size: 15px; text-align: justify;">‎For citizens, this circus is not entertaining--it is tiring. Schools and hospitals lack funds, fake news spreads daily, and corruption eats up resources. The people deserve leaders who focus on service, not spectacle.
+      <p class="lead" style="font-family: Arial; font-size: 15px; text-align: justify;">‎Until real accountability and honesty take center stage, the circus will go on--and Filipinos will keep paying the price.
+<div>    
+      <img src="cartoonist-credit-orawco.png" style="width: 30px; height: auto; vertical-align: middle;">
+<span style="font-size: 12px; vertical-align: middle;"> | Francheska Lumba</span>
+</div>
+</p>
+<hr style="margin-top: 18px;">
+<div style="display: flex; align-items: center; font-size: 8px">
+  <img src="https://drive.google.com/thumbnail?id=1g2PwfeKk_iPDUMw3YGS2Mc1r1g5CElrm&sz=w5000" 
+       style="width: 145px; height: auto; display: block; margin-right: 8px;" 
+       alt="svsf-sslg-orawco-artikulo-logo">
+  <p style="margin: 5; font-family: Calibri; font-size: 8px; text-align: left;">| ©2025 Daily Artikulo of the ORAWCO Club (SVSFHS). All rights reserved.</p>
+
+
+
