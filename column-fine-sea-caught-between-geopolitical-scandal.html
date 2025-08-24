@@ -1,0 +1,175 @@
+<meta name='viewport' content='width=device-width, initial-scale=1'/><!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ORAWCO Society: The Daily Artikulo</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      height: 200vh;
+    }
+    .cover {
+      width: 100%;
+      aspect-ratio: 16 / 5;
+      background-color: #0077FF;
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    #cabinetButton {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      padding: 10px 15px;
+      background: #0077FF;
+      color: white;
+      border: none;
+      cursor: pointer;
+      z-index: 1001;
+    }
+    .cover img {
+      max-height: 80%;
+      max-width: 80%;
+      object-fit: contain;
+    }
+    #cabinet {
+      position: fixed;
+      top: 0;
+      left: -60%;
+      width: 45%;
+      max-width: 300px;
+      height: 100vh;
+      background: #004390;
+      color: white;
+      padding: 20px;
+      box-shadow: 2px 0 10px rgba(0, 0, 0, 0.5);
+      transition: left 0.3s ease;
+      z-index: 1000;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    #cabinet.open {
+      left: 0;
+    }
+    body.lock-scroll {
+      overflow: hidden;
+    }
+    #cabinet a {
+      display: block;
+      margin: 10px 0;
+      text-decoration: none;
+      color: white;
+      font-size: 18px;
+    }
+    #cabinet p {
+      margin: 15px 0;
+      cursor: pointer;
+    }
+    #cabinet p:hover {
+      text-decoration: underline;
+    }
+    #closeCabinet {
+      padding: 10px 15px;
+      background: #004390;
+      color: white;
+      border: none;
+      cursor: pointer;
+      margin-top: auto;
+      width: 100%;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <div class="cover">
+    <button id="cabinetButton" style="width: 15%; height: -25%; font-size: 30px;">☰</button>
+    <img src="orawco2023org.png" alt="Cover Image" style="width: 65%; height: auto;">
+  </div>
+<div id="cabinet">
+  <div>
+    <button id="closeCabinet" style="font-size: 50px; text-align: left;"><strong>×</strong></button>
+    <img src="orawco-club-svsfhs.png" alt="Cover Photo Cabinet" style="width: 75%; height: auto; margin-bottom: -70px;">
+	<a>&nbsp;</a>
+	<a>&nbsp;</a>
+    <a href="index.html" style="top-margin: 30px;">Home</a>
+    <a href="category-section.html">Categories</a>
+    <a href="news-section.html">News</a>
+    <a href="news-section.html#sports">Sports</a>
+    <a href="juanmazing-section.html#agham">Agham</a>
+    <a href="juanmazing-section.html#historya">Historya</a>
+    <a href="about_us.html">About Us</a>
+    <a href="feedback.html">Feedback</a>
+    </div>
+</div>
+  <script>
+    const cabinetButton = document.getElementById("cabinetButton");
+    const cabinet = document.getElementById("cabinet");
+    const closeCabinet = document.getElementById("closeCabinet");
+    const body = document.body;
+    cabinetButton.addEventListener("click", () => {
+      cabinet.classList.add("open");
+      body.classList.add("lock-scroll");
+      cabinetButton.style.display = "none";
+    });
+    closeCabinet.addEventListener("click", () => {
+      cabinet.classList.remove("open");
+      body.classList.remove("lock-scroll");
+      cabinetButton.style.display = "block";
+    });
+    document.querySelectorAll(".cabinet-option").forEach(option => {
+      option.addEventListener("click", () => {
+        cabinet.classList.remove("open");
+        body.classList.remove("lock-scroll");
+        cabinetButton.style.display = "block";
+      });
+    });
+  </script>
+</html>
+<head>
+  <style>
+    .center-image {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 35%;
+    }
+  </style>
+</head>
+<body><hr>
+  <img src="column-06.png" 
+     style="width: 350px !important; height: auto !important; display: block; margin-top: 45px;" 
+     alt="High Quality Image"
+     class="center-image">
+<hr>
+      <p class="category" style="font-family: Arial; font-size: 22px; margin-up: 0px;"><strong>COLUMN</strong></p>
+<main class="article-container">
+    <article>
+      <h1 class="headline" style="font-family: Arial; font-size: 28px; margin-up: 0px;">Fine Sea: Caught Between Geopolitical Scandal/h1>
+      <p class="byline" style="font-family: Calibri; font-size: 12px;">Published on August 24, 2025 | By <span class="author">Juan Emmanuel C. Castro</span></p>
+</body>
+</html> 
+      <p class="lead" style="font-family: Arial; font-size: 15px; text-align: justify;">‎"In the face of a red giant, would the Filipinos triumph?"
+      <p class="lead" style="font-family: Arial; font-size: 15px; text-align: justify;">‎While diplomats shake hands, a hidden crack reaks in the jar filled with personal gain.
+      <p class="lead" style="font-family: Arial; font-size: 15px; text-align: justify;">‎"He who controlled the sea, control the world," as demonstrated by the lesson of history, Britain, Spain, Dutch, and the Portuguese has live this remark in their existence as an empire; that is why countries, young and old, scrabble to exert influence to any abundant waters they can find; the Problem in the West Philippine Sea is an example of geopolitical scandal, a battle of the perverted lovers, the yankees of the west, and the rising dragon of the red sun--sniffing like a hungry dog towards the Pearl of the East Orient, The issue of West Philippine is not just a bilateral border problem but a wider regional dispute that echoes the crack of neocolonialism, for the Sea, exert a great deal amount of interest--for its strategic position between neighboring countries in Asia, and now the Phillipine is caught between a diplomatic standoff, standing in a struggle of sovereignty and freedom--againts foreign infidels, against the Red giant, and the uncle Sam.
+      <p class="lead" style="font-family: Arial; font-size: 15px; text-align: justify;">‎The West Philippine Sea, besides being a hot topic in the battle of geopolitical influence, the WPS holds one of the substantial economic resources, including fish, oil, and various natural resources. That is why China continues its aggressive behavior in the said area, continuously sending off its soldiers and coast guard to harass small fishermen. The place where an average Filipino fisherman that probably earn only a few thousand a month are being harassed with battleships, armed with guns and water cannons, as those fishermen only fish for their daily survival. Now, as those fishermen wrestled with water cannons just to get a living off the sea of their ancestors, some legislators in our country support the lies of those Chinese imperialists--quoting, "There's no West Philippine Sea," as he munches his favorite hopia in the plenaries.
+      <p class="lead" style="font-family: Arial; font-size: 15px; text-align: justify;">‎The actual problem of the West Philippine Sea is not the enemy, but it is the people who are governing our very institution; most of them simp over the idea of diplomatic ties--while with their shaking hands they are already selling us out. A fiery man from Davao, with its famous Jet2 holiday, promised to fight for those seas that should be ours; in the end, he did not only just commit a great crime in our country but also betrayed the countless fishermen who are dependent on that sea he had sold.
+      <p class="lead" style="font-family: Arial; font-size: 15px; text-align: justify;">‎In reality there are only a few people that are fighting for the West Philippine Sea, and definitely it is not our legislators and leaders, but it is the fishermen and common folks who fish there who fight for what is rightfully theirs. Today not only does our country face a geopolitical crossroad, but it also faces betrayal by the very people they vote for. Our motherland and the Filipino people weep as foreign invaders strip its land and sea, while legislators and politicians sell us in the shake of a hand.
+      <p class="lead" style="font-family: Arial; font-size: 15px; text-align: justify;">‎With the Red beast slashing our seawater, may the Filipino spirit be united amidst the division we had towards our common sovereignty.
+<div>    
+      <img src="cartoonist-credit-orawco.png" style="width: 30px; height: auto; vertical-align: middle;">
+<span style="font-size: 12px; vertical-align: middle;"> | Jersey Lois M. Dela Rosa</span>
+</div>
+</p>
+<hr style="margin-top: 18px;">
+<div style="display: flex; align-items: center; font-size: 8px">
+  <img src="https://drive.google.com/thumbnail?id=1g2PwfeKk_iPDUMw3YGS2Mc1r1g5CElrm&sz=w5000" 
+       style="width: 145px; height: auto; display: block; margin-right: 8px;" 
+       alt="svsf-sslg-orawco-artikulo-logo">
+  <p style="margin: 5; font-family: Calibri; font-size: 8px; text-align: left;">| ©2025 Daily Artikulo of the ORAWCO Club (SVSFHS). All rights reserved.</p>
+
+
+
