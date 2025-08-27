@@ -1,0 +1,181 @@
+<meta name='viewport' content='width=device-width, initial-scale=1'/><!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ORAWCO Society: The Daily Artikulo</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      height: 200vh;
+    }
+    .cover {
+      width: 100%;
+      aspect-ratio: 16 / 5;
+      background-color: #0077FF;
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    #cabinetButton {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      padding: 10px 15px;
+      background: #0077FF;
+      color: white;
+      border: none;
+      cursor: pointer;
+      z-index: 1001;
+    }
+    .cover img {
+      max-height: 80%;
+      max-width: 80%;
+      object-fit: contain;
+    }
+    #cabinet {
+      position: fixed;
+      top: 0;
+      left: -60%;
+      width: 45%;
+      max-width: 300px;
+      height: 100vh;
+      background: #004390;
+      color: white;
+      padding: 20px;
+      box-shadow: 2px 0 10px rgba(0, 0, 0, 0.5);
+      transition: left 0.3s ease;
+      z-index: 1000;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    #cabinet.open {
+      left: 0;
+    }
+    body.lock-scroll {
+      overflow: hidden;
+    }
+    #cabinet a {
+      display: block;
+      margin: 10px 0;
+      text-decoration: none;
+      color: white;
+      font-size: 18px;
+    }
+    #cabinet p {
+      margin: 15px 0;
+      cursor: pointer;
+    }
+    #cabinet p:hover {
+      text-decoration: underline;
+    }
+    #closeCabinet {
+      padding: 10px 15px;
+      background: #004390;
+      color: white;
+      border: none;
+      cursor: pointer;
+      margin-top: auto;
+      width: 100%;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <div class="cover">
+    <button id="cabinetButton" style="width: 15%; height: -25%; font-size: 30px;">☰</button>
+    <img src="orawco2023org.png" alt="Cover Image" style="width: 65%; height: auto;">
+  </div>
+<div id="cabinet">
+  <div>
+    <button id="closeCabinet" style="font-size: 50px; text-align: left;"><strong>×</strong></button>
+    <img src="orawco-club-svsfhs.png" alt="Cover Photo Cabinet" style="width: 75%; height: auto; margin-bottom: -70px;">
+	<a>&nbsp;</a>
+	<a>&nbsp;</a>
+    <a href="index.html" style="top-margin: 30px;">Home</a>
+    <a href="category-section.html">Categories</a>
+    <a href="news-section.html">News</a>
+    <a href="news-section.html#sports">Sports</a>
+    <a href="juanmazing-section.html#agham">Agham</a>
+    <a href="juanmazing-section.html#historya">Historya</a>
+    <a href="about_us.html">About Us</a>
+    <a href="feedback.html">Feedback</a>
+    </div>
+</div>
+  <script>
+    const cabinetButton = document.getElementById("cabinetButton");
+    const cabinet = document.getElementById("cabinet");
+    const closeCabinet = document.getElementById("closeCabinet");
+    const body = document.body;
+    cabinetButton.addEventListener("click", () => {
+      cabinet.classList.add("open");
+      body.classList.add("lock-scroll");
+      cabinetButton.style.display = "none";
+    });
+    closeCabinet.addEventListener("click", () => {
+      cabinet.classList.remove("open");
+      body.classList.remove("lock-scroll");
+      cabinetButton.style.display = "block";
+    });
+    document.querySelectorAll(".cabinet-option").forEach(option => {
+      option.addEventListener("click", () => {
+        cabinet.classList.remove("open");
+        body.classList.remove("lock-scroll");
+        cabinetButton.style.display = "block";
+      });
+    });
+  </script>
+</html>
+<head>
+  <style>
+    .center-image {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 35%;
+    }
+  </style>
+</head>
+<body><hr>
+  <img src="juanmazing-03.png" 
+     style="width: 350px !important; height: auto !important; display: block; margin-top: 45px;" 
+     alt="High Quality Image"
+     class="center-image">
+<hr>
+      <p class="category" style="font-family: Arial; font-size: 22px; margin-up: 0px;"><strong>#JUANMAZING!</strong></p>
+<main class="article-container">
+    <article>
+      <h1 class="headline" style="font-family: Arial; font-size: 28px; margin-up: 0px;">The Filipino Triumph: A Day of Honor</h1>
+      <p class="byline" style="font-family: Calibri; font-size: 12px;">Published on August 25, 2025 | By <span class="author">Jedidiah Joy D. Balingit</span></p>
+</body>
+</html> 
+      <p class="lead" style="font-family: Arial; font-size: 15px; text-align: justify;">‎"BAYANI MODE: ACTIVATED!"
+      <p class="lead" style="font-family: Arial; font-size: 15px; text-align: justify;">‎National Heroes Day isn't just a history--it's a challenge, and you're the answer.
+      <p class="lead" style="font-family: Arial; font-size: 15px; text-align: justify;">‎The Philippines doesn't just commemorate--it reignites. National Heroes Day hits not like a soft memory, but like a drumbeat--a thunderclap from the souls of the brave into the hearts of the living. This isn't some textbook trivia or quiz filler. This is your story in motion. And it starts with one word: Bayani.
+      <p class="lead" style="font-family: Arial; font-size: 15px; text-align: justify;">‎It's not about putting heroes on pedestals--heroes are the vibe you catch when you decide to move, to shake the system. The past isn't a dusty museum--it's the spark in your chest daring you to light up the dark.
+      <p class="lead" style="font-family: Arial; font-size: 15px; text-align: justify;">‎Dr. Jose Rizal doesn't sleep in statues--he lives in students who refuse to stay silent. He wields his pen like a sword and slices through centuries of injustice. Noli Me Tangere and El Fili aren't old books--they're blueprints for every young mind that dares to question, dares to dream louder than fear. When you speak truth in a world that hides it, Rizal speaks through you.
+      <p class="lead" style="font-family: Arial; font-size: 15px; text-align: justify;">‎Rizal's pen is your voice dropped in a silent room--it cracks walls, shakes the norm, and dares you to speak even when the world tries to mute you.
+      <p class="lead" style="font-family: Arial; font-size: 15px; text-align: justify;">‎Andres Bonifacio doesn't fade into paintings--he marches beside the brave. He's the lightning in every fist raised high. Bonifacio doesn't wait for heroes--he becomes one. No fame, no fortune, just fire in his chest and a bolo in hand. He shows us: you don't need a perfect background to start a revolution--you just need guts. In every youth who organizes, resists, or stands tall against corruption, Bonifacio breathes again.
+      <p class="lead" style="font-family: Arial; font-size: 15px; text-align: justify;">‎Bonifacio is the OG hype man for action--reminding us that you don't wait for permission to rewrite the story. The revolution is in every "I can" that flips "I can't."
+      <p class="lead" style="font-family: Arial; font-size: 15px; text-align: justify;">‎Gabriela Silang doesn't whisper from the past--she screams across time. A warrior, a widow, a woman who commands. When women were told to stay quiet, she kicked down walls and led armies. Gabriela rides again in every Filipina who fights for her rights, reclaims her voice, owns her story. She proves being a woman isn't a weakness--it's a weapon.
+      <p class="lead" style="font-family: Arial; font-size: 15px; text-align: justify;">‎Gabriela is every unapologetic queen who flips the script--turning silence into a battle cry, showing that power doesn't ask for permission, it just takes over.
+      <p class="lead" style="font-family: Arial; font-size: 15px; text-align: justify;">‎Apolinario Mabini doesn't walk--but he moves mountains. Paralyzed from the waist down, yet rising as the brain of the revolution. He shows us: strength isn't in your limbs, it's in your will. Mabini exists today in thinkers, planners, and quiet warriors who reshape systems behind the scenes. He tells every kid who feels unheard: "Your mind is your machete. Wield it well."
+      <p class="lead" style="font-family: Arial; font-size: 15px; text-align: justify;">‎Mabini is proof that power lives in the mind's hustle--the silent moves, the sharp plans. You don't have to shout to shake the world; sometimes the quietest minds cut the deepest.
+      <p class="lead" style="font-family: Arial; font-size: 15px; text-align: justify;">‎But beyond them are millions of unsung heroes--the rebels with no names, the mothers who cooked for fighters, the kids who carried secrets through rice fields. No spotlight. No medals. Just love for country burning brighter than fear. They show us heroism isn't rare. It's everywhere. It's you, when you choose courage over comfort.
+      <p class="lead" style="font-family: Arial; font-size: 15px; text-align: justify;">‎The real heroes? The everyday ones--grinding in silence, choosing the harder right instead of the easy wrong. Heroism is a vibe, not a spotlight.
+      <p class="lead" style="font-family: Arial; font-size: 15px; text-align: justify;">‎Imagine this: a future Philippine flag waves on the moon, or above an invention that heals the planet. The crowd cheers--not for a celebrity, but for you. A Filipino student who walked to school in slippers, read by flashlight during brownouts, now changing the world. That's not fantasy--that's legacy. That's what happens when bayani mode stays on. Your heroes didn't die for a country stuck in the past. They died for a nation that dares to evolve.
+      <p class="lead" style="font-family: Arial; font-size: 15px; text-align: justify;">‎Legacy isn't just what you inherit--it's the remix you drop, the next verse you spit on the track of history. The fire keeps passing, but the beat? That's yours to make.
+      <p class="lead" style="font-family: Arial; font-size: 15px; text-align: justify;">‎And don't be fooled--heroism doesn't always wear medals. Sometimes it looks like finishing modules after a night shift. Standing up against cyberbullying. Helping a friend with mental health. Building something beautiful in a broken place. You don't need to be perfect to be a hero. Just care enough to act.
+      <p class="lead" style="font-family: Arial; font-size: 15px; text-align: justify;">‎Heroism is in the everyday hustle--the small wins, the quiet kindnesses, the stubborn hope that refuses to quit. You don't have to be flawless. Just real.
+      <p class="lead" style="font-family: Arial; font-size: 15px; text-align: justify;">‎National Heroes Day isn't just about the dead. It's about the living. The 17-year-old who leads a campus protest. The 14-year-old who studies by candlelight. The 20-year-old writing songs about injustice. You don't need to wear a barong to be a hero. You just need to care. Loudly.
+      <p class="lead" style="font-family: Arial; font-size: 15px; text-align: justify;">‎This moment is a stage--your voice, your move, your stand--are the power plays rewriting what it means to be bayani today.
+</p>
+<hr style="margin-top: 18px;">
+<div style="display: flex; align-items: center; font-size: 8px">
+  <img src="https://drive.google.com/thumbnail?id=1g2PwfeKk_iPDUMw3YGS2Mc1r1g5CElrm&sz=w5000" 
+       style="width: 145px; height: auto; display: block; margin-right: 8px;" 
+       alt="svsf-sslg-orawco-artikulo-logo">
+  <p style="margin: 5; font-family: Calibri; font-size: 8px; text-align: left;">| ©2025 Daily Artikulo of the ORAWCO Club (SVSFHS). All rights reserved.</p>
