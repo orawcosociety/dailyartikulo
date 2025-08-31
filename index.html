@@ -185,29 +185,45 @@
 	  </a>
 <hr style="margin-top: 45px;">
 <h1 class="headline1" style="font-family: Calibri; font-size: 22px;"><strong>Recent Post:</strong></h1>
-<div style="border: 1px solid #aaa; border-radius: 10px; padding: 10px; display: inline-block; max-width: 500px;">
- <a href="https://www.facebook.com/share/p/14LsiXBHdvM/">
-  <img src=orawco-facebook-share-august-31-2025.png" 
-       style="width: 30px; height: auto; vertical-align: middle; margin-right: 8px;">
-  <span style="font-size: 12px; vertical-align: middle;">
-    <strong>FB POST: </strong>📖 𝐕𝐄𝐑𝐒𝐄 𝐎𝐅 𝐓𝐇𝐄 𝐖𝐄𝐄𝐊: 𝙋𝙎𝘼𝙇𝙈 68 : 5 𝙉𝙄𝙑
-    <br>
-    <span style="font-size: 12px;">About 2 hours ago</span>
-  </span>
- </a>
-</div>
+
 
 <div style="border: 1px solid #aaa; border-radius: 10px; padding: 10px; display: inline-block; max-width: 500px;">
- <a href="https://m.facebook.com/story.php?story_fbid=pfbid031UhqwWK8UbMHyCFdV4r5vrjH81JdpskqRmqptSysZ9E3pmBzVQwLtnfsMzBxgeMSl&id=61552159760107&mibextid=Nif5oz">
-  <img src=orawco-facebook-share-august-28-2025.png" 
-       style="width: 30px; height: auto; vertical-align: middle; margin-right: 8px;">
-  <span style="font-size: 12px; vertical-align: middle;">
-    <strong>FB POST: </strong>𝕰𝖝𝖆𝖒 𝖕𝖔𝖘𝖙-𝖒𝖔𝖗𝖙𝖊𝖒. 𝕷𝖊𝖙'𝖘 𝖇𝖗𝖊𝖆𝖐 𝖎𝖙 𝖉𝖔𝖜𝖓!😎
-    <br>
-    <span style="font-size: 12px;">About 2 days ago</span>
-  </span>
- </a>
+  <a href="https://www.facebook.com/share/p/1Dc2BrtfwJ/" target="_blank">
+    <img src="orawco-facebook-share-august-28-2025.png" 
+         style="width: 30px; height: auto; vertical-align: middle; margin-right: 8px;">
+    <span style="font-size: 12px; vertical-align: middle;">
+      <strong>FB POST: </strong>𝕰𝖝𝖆𝖒 𝖕𝖔𝖘𝖙-𝖒𝖔𝖗𝖙𝖊𝖒. 𝕷𝖊𝖙'𝖘 𝖇𝖗𝖊𝖆𝖐 𝖎𝖙 𝖉𝖔𝖜𝖓!😎
+      <br>
+      <span id="time-posted" style="font-size: 12px;"></span>
+    </span>
+  </a>
 </div>
+
+<script>
+  const postDate = new Date("2025-08-28T14:08:34"); 
+
+  function timeAgo(date) {
+    const seconds = Math.floor((new Date() - date) / 1000);
+    let interval = Math.floor(seconds / 31536000);
+    if (interval >= 1) return interval + " year" + (interval > 1 ? "s" : "") + " ago";
+    interval = Math.floor(seconds / 2592000);
+    if (interval >= 1) return interval + " month" + (interval > 1 ? "s" : "") + " ago";
+    interval = Math.floor(seconds / 86400);
+    if (interval >= 1) return interval + " day" + (interval > 1 ? "s" : "") + " ago";
+    interval = Math.floor(seconds / 3600);
+    if (interval >= 1) return interval + " hour" + (interval > 1 ? "s" : "") + " ago";
+    interval = Math.floor(seconds / 60);
+    if (interval >= 1) return interval + " minute" + (interval > 1 ? "s" : "") + " ago";
+    return "just now";
+  }
+
+  function updateTime() {
+    document.getElementById("time-posted").innerText = "About " + timeAgo(postDate);
+  }
+
+  updateTime();
+  setInterval(updateTime, 60000);
+</script>
 
 <div style="border: 1px solid #aaa; border-radius: 10px; padding: 10px; display: inline-block; max-width: 500px;">
  <a href="https://www.facebook.com/share/p/1BCSxYJxS2/">
@@ -258,6 +274,7 @@
        style="width: 145px; height: auto; display: block; margin-right: 8px;" 
        alt="svsf-sslg-orawco-artikulo-logo">
   <p style="margin: 5; font-family: Calibri; font-size: 8px; text-align: left;">| ©2025 Daily Artikulo of the ORAWCO Club (SVSFHS). All rights reserved.</p>
+
 
 
 
