@@ -1,0 +1,166 @@
+<meta name='viewport' content='width=device-width, initial-scale=1'/><!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ORAWCO Society: The Daily Artikulo</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      height: 200vh;
+    }
+    .cover {
+      width: 100%;
+      aspect-ratio: 16 / 5;
+      background-color: #0077FF;
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    #cabinetButton {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      padding: 10px 15px;
+      background: #0077FF;
+      color: white;
+      border: none;
+      cursor: pointer;
+      z-index: 1001;
+    }
+    .cover img {
+      max-height: 80%;
+      max-width: 80%;
+      object-fit: contain;
+    }
+    #cabinet {
+      position: fixed;
+      top: 0;
+      left: -60%;
+      width: 45%;
+      max-width: 300px;
+      height: 100vh;
+      background: #004390;
+      color: white;
+      padding: 20px;
+      box-shadow: 2px 0 10px rgba(0, 0, 0, 0.5);
+      transition: left 0.3s ease;
+      z-index: 1000;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    #cabinet.open {
+      left: 0;
+    }
+    body.lock-scroll {
+      overflow: hidden;
+    }
+    #cabinet a {
+      display: block;
+      margin: 10px 0;
+      text-decoration: none;
+      color: white;
+      font-size: 18px;
+    }
+    #cabinet p {
+      margin: 15px 0;
+      cursor: pointer;
+    }
+    #cabinet p:hover {
+      text-decoration: underline;
+    }
+    #closeCabinet {
+      padding: 10px 15px;
+      background: #004390;
+      color: white;
+      border: none;
+      cursor: pointer;
+      margin-top: auto;
+      width: 100%;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <div class="cover">
+    <button id="cabinetButton" style="width: 15%; height: -25%; font-size: 30px;">☰</button>
+    <img src="orawco2023org.png" alt="Cover Image" style="width: 65%; height: auto;">
+  </div>
+<div id="cabinet">
+  <div>
+    <button id="closeCabinet" style="font-size: 50px; text-align: left;"><strong>×</strong></button>
+    <img src="orawco-club-svsfhs.png" alt="Cover Photo Cabinet" style="width: 75%; height: auto; margin-bottom: -70px;">
+	<a>&nbsp;</a>
+	<a>&nbsp;</a>
+    <a href="index.html" style="top-margin: 30px;">Home</a>
+    <a href="category-section.html">Categories</a>
+    <a href="news-section.html">News</a>
+    <a href="news-section.html#sports">Sports</a>
+    <a href="juanmazing-section.html#agham">Agham</a>
+    <a href="juanmazing-section.html#historya">Historya</a>
+    <a href="about_us.html">About Us</a>
+    <a href="feedback.html">Feedback</a>
+    </div>
+</div>
+  <script>
+    const cabinetButton = document.getElementById("cabinetButton");
+    const cabinet = document.getElementById("cabinet");
+    const closeCabinet = document.getElementById("closeCabinet");
+    const body = document.body;
+    cabinetButton.addEventListener("click", () => {
+      cabinet.classList.add("open");
+      body.classList.add("lock-scroll");
+      cabinetButton.style.display = "none";
+    });
+    closeCabinet.addEventListener("click", () => {
+      cabinet.classList.remove("open");
+      body.classList.remove("lock-scroll");
+      cabinetButton.style.display = "block";
+    });
+    document.querySelectorAll(".cabinet-option").forEach(option => {
+      option.addEventListener("click", () => {
+        cabinet.classList.remove("open");
+        body.classList.remove("lock-scroll");
+        cabinetButton.style.display = "block";
+      });
+    });
+  </script>
+</html>
+<head>
+  <style>
+    .center-image {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 35%;
+    }
+  </style>
+</head>
+<body><hr>
+  <img src="news-published-on-august-30-2025-of-orawco.png" 
+     style="width: 350px !important; height: auto !important; display: block; margin-top: 45px;" 
+     alt="balita"
+     class="center-image">
+<hr>
+      <p class="category" style="font-family: Arial; font-size: 22px; margin-up: 0px;"><strong>NEWS</strong></p>
+<main class="article-container">
+    <article>
+      <h1 class="headline" style="font-family: Arial; font-size: 28px; margin-up: 0px;">Comelec rejects Duterte Youth party-list's registration</h1>
+      <p class="byline" style="font-family: Calibri; font-size: 12px;">Published on August 30, 2025 | By <span class="author">Jersey Lois M. Dela Rosa</span></p>
+</body>
+</html> 
+      <p class="upper-body" style="font-family: Arial; font-size: 15px;">𝙈𝘼𝙉𝙄𝙇𝘼, 𝙋𝙃𝙄𝙇𝙄𝙋𝙋𝙄𝙉𝙀𝙎 -- Commision on Election (Comelec) rejects the registration of Duterte Youth as an official party-list of the Philippines on August 29.
+      <p class="upper-body" style="font-family: Arial; font-size: 15px;">Five commissioners voted to uphold the cancellation of the party-list's registration 5-1 one  did not participate and one dissents.
+      <p class="upper-body" style="font-family: Arial; font-size: 15px;">The Comelec Second Division voided its registration from the start in June, 2025.
+      <p class="upper-body" style="font-family: Arial; font-size: 15px;">The Comelec Second Division also stated the party-list's failure to prove regarding their compliance within the jurisdictional requirements, leading to their party-list's registration to be voided.
+      <p class="upper-body" style="font-family: Arial; font-size: 15px;">"Inasmuch as Duterte Youth failed to prove compliance with the jurisdictional requirements of publication and hearing, its registration as a party-list organization is void," according to the Comelec Second Division.
+      <p class="upper-body" style="font-family: Arial; font-size: 15px;">The Duterte Youth party-list place as 2nd in the official results of the party-list election with 2,336,140 voters in May 2025, but Comelec rejects their registration as an official party-list becusse of many violations.</p>
+<hr style="margin-top: 45px;">
+<div style="display: flex; align-items: center; font-size: 8px">
+  <img src="https://drive.google.com/thumbnail?id=1g2PwfeKk_iPDUMw3YGS2Mc1r1g5CElrm&sz=w5000" 
+       style="width: 185px; height: auto; display: block; margin-right: 8px;" 
+       alt="svsf-sslg-orawco-artikulo-logo">
+  <p style="margin: 5; font-family: Calibri; font-size: 8px; text-align: left;">| ©2025 Daily Artikulo of the ORAWCO Club (SVSFHS). All rights reserved.</p>
